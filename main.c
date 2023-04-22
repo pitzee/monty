@@ -8,6 +8,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
 */
 int main(int argc, char *argv[])
 {
+
 	char *content;
 	FILE *file;
 	size_t size = 0;
@@ -15,7 +16,7 @@ int main(int argc, char *argv[])
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
 
-	if (argc != 2)
+		if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
